@@ -26,6 +26,8 @@ title=[';---------------------------------------------------';
     '; Author: Victor Espinoza, Eng.                     ';
     '; Santiago, Chile. 2009                             ';
     ';---------------------------------------------------';
+    '; Edited by Seth Hollandsworth                      ';
+    '; Raleigh, NC, USA. 2017                            ';
     '                                                    ';
     '                                                    ';
     'ABS stone = < 13 13 13 13 13 13>                    ';
