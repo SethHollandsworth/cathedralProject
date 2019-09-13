@@ -1,6 +1,6 @@
 def findHeight():
-	userInput = input('What file do you want to search? ')
-	#userInput = 'churchTestLowCubeNormalizedFlippedYZ.geo'
+	# userInput = input('What file do you want to search? ')
+	userInput = 'v3.2.2GEOMETRYBIGGERCHOIR.GEO'
 
 	file = open(userInput,'r',encoding='cp1252')
 

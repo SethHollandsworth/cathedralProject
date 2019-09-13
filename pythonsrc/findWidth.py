@@ -1,18 +1,16 @@
-def findWidth():
+def findHeight():
 	#userInput = input('What file do you want to search? ')
-	userInput = 'v3.2.2GEOMETRYBIGGERCHOIR.GEO'
+	userInput = 'churchTestLowCubeNormalizedFlippedYZ.geo'
 
 	file = open(userInput,'r',encoding='cp1252')
 
 	vertices = []
 	for line in file:
 		if line[0] not in '[;CPA ' and line != '\n':
-			vertices += [list(map(float,line.split()))]
+			vertices += [list(map(float,line[1:].split()))]
 	for point in vertices:
-		for item in point:
-			if item < 0:
-				item *= -1
-			
+		if point[2] < 0:
+			point[2] *= -1
 	small = float('inf')
 	big = float('-inf')
 	for point in vertices:
@@ -27,4 +25,4 @@ def findWidth():
 	#print(small)
 	#print(big-small)
 	return big - small
-print(findWidth())
+print(findHeight())
